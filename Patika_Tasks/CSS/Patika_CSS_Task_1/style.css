@@ -3,6 +3,7 @@ body {
     list-style-position: inside;
     font-size: large;
 }
-#product_pic >ul >li> img{
+
+#product_pic>ul>li>img {
     width: 300px;
 }
