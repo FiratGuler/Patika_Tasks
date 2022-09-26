@@ -99,31 +99,27 @@ const createProducts = (food) => {
   `
   return html;
 }
-let a = "Japan"
-console.log(a.innerHTML)
 
-
-
-const ProductMap = () => {
+const setFilter = (filt) => {
+  let a;
+  a = filt;
+  console.log(a);
   let allFoods = "";
-
-
 
   menu.filter(item => {
     if (a == "Korea") {
-      item.category === a ? allFoods += createProducts(item) : console.log('hello world')
+      item.category === a ? allFoods += createProducts(item) : null
     }
     else if (a == "Japan") {
-      item.category === a ? allFoods += createProducts(item) : console.log('hello world')
+      item.category === a ? allFoods += createProducts(item) : null
     }
     else if (a == "China") {
-      item.category === a ? allFoods += createProducts(item) : console.log('hello world')
+      item.category === a ? allFoods += createProducts(item) : null
     }
     else allFoods += createProducts(item)
-
 
   })
   menuDOM.innerHTML = allFoods;
 }
 
-document.addEventListener("DOMContentLoaded", ProductMap);
+document.addEventListener("DOMContentLoaded", setFilter('all'));

@@ -28,17 +28,17 @@
         </div>
         <span id="category"></span>
         <!-- filter buttons-->
-      
+
         <div class="btn-container">
-          <button id="btn" class="btn btn-outline-dark btn-item" type="button">All
+          <button class="btn btn-outline-dark btn-item" onclick='setFilter("All")' type="button">All
           </button>
-          <button id="btn" class="btn btn-outline-dark btn-item"  type="button">
+          <button class="btn btn-outline-dark btn-item"  onclick='setFilter("Korea")' type="button">
             Korea
           </button>
-          <button id="japan" class="btn btn-outline-dark btn-item" type="button">
+          <button class="btn btn-outline-dark btn-item" onclick='setFilter("Japan")' type="button">
             Japan
           </button>
-          <button id="china" class="btn btn-outline-dark btn-item" type="button">
+          <button class="btn btn-outline-dark btn-item" onclick='setFilter("China")' type="button">
             China
           </button>
         </div>
@@ -50,6 +50,7 @@
         </div>
       </section>
     </div>
-<script src="app.js"></script>
+    <script src="app.js"></script>
+    <script src="den.js"></script>
   </body>
 </html>
